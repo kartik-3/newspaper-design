@@ -10,9 +10,10 @@ a {
   color: white;
 }
 
-.big-text {
-  font-weight: 900;
-  font-size: 70px;
+h4,
+h3,
+h2 {
+  font-weight: bolder;
 }
 
 .news-headline {
@@ -20,17 +21,6 @@ a {
   font-weight: 650;
   text-align: center;
   font-stretch: 200%;
-}
-
-.border-top-bottom {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-}
-
-h4,
-h3,
-h2 {
-  font-weight: bolder;
 }
 
 .news-label {
@@ -50,7 +40,8 @@ h2 {
   transform: skewX(-8deg);
 }
 
-.news-label-text {overflow-wrap: normal;
+.news-label-text {
+  overflow-wrap: normal;
   transform: skewX(-8deg);
   position: absolute;
   left: 5px;
@@ -61,15 +52,9 @@ h2 {
 }
 
 .whiteSpc {
-  white-space: nowrap
+  white-space: nowrap;
 }
-/*
-@media only screen and (max-width: 600px) {
-  * {
-    font-size: 0.5rem;
-  }
-}
-*/
+
 .zi-1 {
   z-index: 1;
   position: relative;
@@ -82,6 +67,168 @@ h2 {
   left: 5px;
 }
 
-.red-headline {
+.mar-headline {
   color: maroon;
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  .below-nav {
+    font-size: 11px;
+  }
+
+  .news-headline {
+    font-size: 50px;
+    font-weight: 650;
+    text-align: center;
+  }
+  
+  .mar-headline {
+    font-size: 22px;
+  }
+
+  #heading1_electric_cars {
+    font-size: 30px !important;
+    font-weight: bold !important;
+  }
+  
+  #page_name {
+    font-weight: 900 !important;
+    font-size: 30px !important;
+  }
+  
+  .news-label {
+    width: 70px;
+  }
+  
+  .news-label::before {
+    width: 20%;
+  }
+  
+  .news-label-text {
+    font-size: 10px;
+  }
+}
+@media (min-width: 800px) and (max-width: 1000px) {
+  #page_name {
+    font-weight: 900 !important;
+    font-size: 40px !important;
+  }
+
+  .news-label {
+    width: 80px;
+  }
+  
+  .news-label::before {
+    width: 20%;
+  }
+  
+  .news-label-text {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .below-nav {
+    font-size: 12px;
+  }
+
+  .news-headline {
+    font-size: 70px;
+    font-weight: 650;
+    text-align: center;
+  }
+
+  .mar-headline {
+    font-size: 23px;
+  }
+  
+  #page_name {
+    font-weight: 900 !important;
+    font-size: 40px !important;
+  }
+  
+  .news-label {
+    width: 90px;
+  }
+  
+  .news-label::before {
+    width: 20%;
+  }
+  
+  .news-label-text {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  * {
+    font-size: 12px;
+  }
+
+  #page_name {
+    font-weight: 900 !important;
+    font-size: 25px !important;
+  }
+
+  #heading1_electric_cars {
+    font-size: 25px !important;
+    font-weight: bold !important;
+  }
+
+  .page1-top-text {
+    font-size: 10px !important;
+  }
+  .h4,
+  .h3,
+  .h2 {
+    font-weight: bold;
+  }
+
+  .para-grid {
+    padding-left: 1.5em;
+  }
+
+  .below-nav {
+    font-size: 10px;
+  }
+
+  .news-headline {
+    font-size: 40px;
+    font-weight: 650;
+    text-align: center;
+  }
+
+  #p2_h1 {
+    font-size: 20px;
+  }
+
+  .mar-headline {
+    font-size: 20px;
+  }
+
+  .news-label {
+    width: 50px;
+  }
+  
+  .news-label::before {
+    width: 20%;
+  }
+  
+  .news-label-text {
+    font-size: 9px;
+  }
+}
+
+#page_name {
+  font-weight: 900;
+  font-size: 60px;
+}
+
+#heading1_electric_cars {
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.text-wrap {
+  word-wrap: break-word;
 }
